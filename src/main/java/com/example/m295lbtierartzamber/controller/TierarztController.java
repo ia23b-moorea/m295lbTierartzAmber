@@ -46,6 +46,11 @@ public class TierarztController {
     ) {
         return ResponseEntity.ok(service.update(id, tier));
     }*/
+   /* @PutMapping("/{id}")
+    public ResponseEntity<Tier> update(@PathVariable Long id, @Valid @RequestBody Tier tier) {
+        return ResponseEntity.ok(service.update(id, tier));
+    }
+    */
 
     // DELETE single
     @DeleteMapping("/{id}")
