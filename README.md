@@ -2,7 +2,7 @@
 
 Beschreibung
 
-Dies ist ein Projekt für das verwalten von Tieren
+Dies ist ein Projekt für das verwalten von Tieren.
 
 
 
