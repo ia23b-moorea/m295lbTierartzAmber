@@ -6,7 +6,7 @@ Dies ist ein Projekt für das verwalten von Tieren
 
 
 
-•	«Visuals» Datenbankdiagramm, Klassendiagramm, Screenshot der Testdurchführung
+#### **•	«Visuals» Datenbankdiagramm, Klassendiagramm, Screenshot der Testdurchführung**
 
 ![img_3.png](img_3.png)
 Datenbankdiagramm
@@ -15,7 +15,7 @@ Klassendiagramm
 ![img_5.png](img_5.png)
 Testing
 
-• **Validierungsregeln**
+#### • **Validierungsregeln**
 
 Der Name des Tieres darf nicht leer sein.
 
@@ -23,16 +23,17 @@ Das Tier darf mindesten 0.1 wiegen.
 
 Das Geburtsdatum darf nicht in der Zukunftliegen.
 
-Die Ziffern für die kosten bis zu 6 Stellen vor und 2 Stellen nach dem Komma sein.
 
 
-•	Berechtigungsmatrix
+
+#### •	Berechtigungsmatrix
 
 Ich habe zwei Rollen ausgedacht, der Admin und ein user. Da habe ich eine Table users hinzugefügt.
 Das passwort ist admin123.
 
 
-**•	OpenAPI Dokumentation der Services (Resourcen)**
+#### **•	OpenAPI Dokumentation der Services (Resourcen)**
+
 openapi: 3.1.0
 info:
 title: OpenAPI definition
@@ -247,9 +248,7 @@ servers:
 
 •	**Autor**: Amber Moore
 
-•	Zusammenfassung 
-
-
+#### •	**Zusammenfassung** 
 
 Dieses Projekt ist eine Tierarzt Prxi als Spring-Boot-Anwendung.  
 Es bietet eine REST-API zur ganzheitlichen Verwaltung von Tieren und ihrer Tierarztbesuche:

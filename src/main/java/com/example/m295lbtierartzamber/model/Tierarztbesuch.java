@@ -22,7 +22,7 @@ public class Tierarztbesuch {
 
     private LocalDate datum;
     private String beschreibung;
-    @Digits(integer = 6, fraction = 2)
+
     private double kosten;
 
     @ManyToOne(fetch = FetchType.LAZY)

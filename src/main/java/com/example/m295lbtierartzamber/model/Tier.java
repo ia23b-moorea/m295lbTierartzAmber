@@ -31,8 +31,7 @@ public class Tier {
 
     @Positive
     @DecimalMin(value = "0.1", inclusive = true)
-    private double gewicht;
-    private boolean geimpft;
+    private double gewicht;    private boolean geimpft;
     private boolean gesund;
     private LocalDate aufnahmedatum;
 

@@ -26,10 +26,6 @@ public class TierarztbesuchService {
         return repository.findById(id);
     }
 
-    /*public List<Tierarztbesuch> getByTierId(Long tierId) {
-        return repository.findByTierId(tierId);
-    }*/
-
     public Tierarztbesuch update(Long id, Tierarztbesuch updated) {
         return repository.findById(id)
                 .map(b -> {
