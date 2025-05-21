@@ -1,6 +1,7 @@
 package com.example.m295lbtierartzamber.model;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Digits;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -21,6 +22,7 @@ public class Tierarztbesuch {
 
     private LocalDate datum;
     private String beschreibung;
+    @Digits(integer = 6, fraction = 2)
     private double kosten;
 
     @ManyToOne(fetch = FetchType.LAZY)

@@ -29,6 +29,7 @@ public class SecurityConfig {
         return new JdbcUserDetailsManager(dataSource);
     }
 
+
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
@@ -36,10 +37,10 @@ public class SecurityConfig {
                 .authorizeHttpRequests(authorize -> authorize
                         // Public endpoints - no authentication required
                         .requestMatchers(HttpMethod.GET, "/api/tiere").permitAll()
-                        .requestMatchers(HttpMethod.GET, "/api/tiere/position/**").permitAll()
+                        .requestMatchers(HttpMethod.PUT, "/api/tiere/position/**").permitAll()
 
                         // Secured endpoints - require authentication
-                        .requestMatchers(HttpMethod.POST, "/api/tiere").authenticated()
+                        .requestMatchers(HttpMethod.POST, "/api/tiere/**").hasAnyRole("ADMIN")
                         .requestMatchers(HttpMethod.DELETE, "/api/tiere/**").authenticated()
 
                         // Add more specific rules for any new endpoints

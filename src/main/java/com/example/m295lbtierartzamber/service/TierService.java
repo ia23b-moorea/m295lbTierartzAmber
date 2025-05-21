@@ -2,6 +2,7 @@ package com.example.m295lbtierartzamber.service;
 
 import com.example.m295lbtierartzamber.model.Tier;
 import com.example.m295lbtierartzamber.repository.TierRepository;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -48,5 +49,12 @@ public class TierService {
         log.info("Lösche alle Tiere");
         repo.deleteAll();
         log.debug("Alle Tiere gelöscht");
+    }
+
+    public Tier update(Long id, @Valid Tier tier) {
+        log.info("Update ein Tier: {}", tier.getName());
+        Tier saved = repo.save(tier);
+        log.info("Tier gespeichert mit ID={}", saved.getId());
+        return saved;
     }
 }
